@@ -8,12 +8,18 @@
 <h2>Index 111</h2>
 
 <div ng-app="imageApplication" ng-controller="ImageController as imgCtrl">
-    <div id="jcarousel">
-        <ul>
-            <li ng-repeat="image in imgCtrl.images">
-                <img ng-src="{{image}}" />
-            </li>
-        </ul>
+    <div class="jCarouselControl">
+        <div id="stop" class="btn btn-primary">Stop</div>
+        <div id="start" class="btn btn-primary">Start</div>
+    </div>
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul>
+                <li ng-repeat="image in imgCtrl.images">
+                    <img ng-src="{{image}}" />
+                </li>
+            </ul>
+        </div>
     </div>
     
 </div>

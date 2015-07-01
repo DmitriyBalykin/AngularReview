@@ -1,0 +1,18 @@
+﻿.jcarousel-wrapper {
+    position: relative;
+    width: 300px;
+}
+
+.jcarousel {
+     position: relative;
+     overflow: hidden;
+     padding: 5px;
+}
+.jcarousel ul {
+     width: 20000em;
+     position: relative;
+     list-style: none;
+}
+.jcarousel li {
+     float: left;
+}

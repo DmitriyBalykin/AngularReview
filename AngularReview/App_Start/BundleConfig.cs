@@ -23,6 +23,10 @@ namespace AngularReview
                         "~/Scripts/angular.js",
                         "~/Scripts/angular.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                        "~/Scripts/bootstrap.js",
+                        "~/Scripts/bootstrap.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/angularControllers").Include(
                         "~/Scripts/app/ImageController.js"));
 
@@ -53,6 +57,9 @@ namespace AngularReview
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            bundles.Add(new StyleBundle("~/Content/bootstrap").Include("~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/Content/app").Include("~/Content/imageApp.css"));
         }
     }
 }
